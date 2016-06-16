@@ -1,0 +1,50 @@
+// Micro clearfix mixin
+@mixin cf {
+	&:before,
+	&:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	&:after {
+	    clear: both;
+	}
+
+	& {
+	    *zoom: 1;
+	}
+}
+// Mantain aspect ratio mixin: https://goo.gl/GiL28O
+// i.e: @include aspect-ratio(16, 9 );
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before{
+		display: block;
+		content: " ";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+
+	& > * {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+// Creating rows with row machine https://goo.gl/H1Gkw2
+// i.e: @include rowMachine(5, 2%);
+@mixin rowMachine($numPerRow, $margin) {
+
+	width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+	
+	&:nth-child(n) {
+		margin-bottom: $margin;
+		margin-right: $margin;
+	}
+	&:nth-child(#{$numPerRow}n) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}

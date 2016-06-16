@@ -1,0 +1,27 @@
+{
+  "name": "Example bower project",
+  "homepage": "https://github.com/adriamarcet/myquickgruntproject",
+  "authors": [
+    "Adria Marcet <adriamarcetrovira@gmail.com>"
+  ],
+  "description": "An example project using bower",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "testkewyword"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_dev/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "animate.css": "^3.5.1"
+  }
+}

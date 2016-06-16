@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+h1,h2,h3,h4,h5,h6,p,span,em,hr,br { display: block; margin: 0; padding: 0; }
+
+iframe {
+  width: 100%    !important;
+  // height: auto   !important;
+}
+
+label {
+	font-size: 2rem;
+	display: block;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+/* Li counter with style trick @http://goo.gl/vW9Jxj */
+ol {
+    counter-reset:li; /* Initiate a counter */
+
+	& > li {
+	    list-style:none; /* Disable the normal item numbering */
+		
+		&:before {
+			content:counter(li); /* Use the counter as content */
+			counter-increment:li; /* Increment the counter by 1 */
+		}
+	}
+}
