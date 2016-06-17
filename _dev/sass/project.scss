@@ -8,6 +8,16 @@
 @import "globals.scss";
 @import "helpers.scss";
 
+
+/* Using Modular Scale to deal font sizing and space in combination with Typi */
+@import '../components/modular-scale/stylesheets/modular-scale.scss';
+@import "setup-modular-scale.scss";
+
+/* Using TYPI to deal with font-sizing and vertical rythm */
+@import "../components/typi/scss/typi.scss";
+@import "setup-typi.scss";
+
+
 @import "components/inputs.scss";
 @import "components/icons.scss";
 @import "components/group.scss";

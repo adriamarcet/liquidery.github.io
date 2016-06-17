@@ -1,0 +1,60 @@
+/*
+	Setup for Typi component:
+	Reference url: @http://goo.gl/l6rKpH
+	Using Modular Scale with Typi
+	Reference url: @http://goo.gl/N92ce3
+
+	1st setup typi map
+	Typi automatically looks for a $breakpoints map 
+	to create your media queries (located in _varaibles.scss)
+*/
+$typi: (
+	null: (16px, 1.3), // Sets line-height to 1.3
+	small: 18px,
+	large: (20px, 1.4) // Sets line-height to 1.4
+);
+
+/*
+	BREAKPOINTS
+*/
+
+$breakpoints: (
+  small: 800px,
+  large: 1200px
+);
+
+/*
+	Setup a $typi:
+	Once the $typi map is set up, 
+	we call the typi-base() mixin within the html selector.
+	This creates the font-sizes stated in percentages
+	with the breakpoints setup in the $breakpoints map.
+*/
+html {
+	@include typi-base();
+}
+
+/*
+	Modular scale + type
+	we need to create font-maps to hold your typography configurations
+	You can use Modular Scale directly with Typi 
+	by writing the ms() function as the first value of each key
+*/
+$h1-map: (
+	null: (ms(5), 1.2),
+	large: (ms(3), 1.3)
+);
+
+$h2-map: (
+	null: ms(3),
+	large: ms(2)
+);
+
+$h3-map: (
+	null: ms(2),
+	large: ms(1)
+);
+
+h1 { @include typi($h1-map) }
+h2 { @include typi($h2-map) }
+h3 { @include typi($h3-map) }

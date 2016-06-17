@@ -1,5 +1,4 @@
 /*-- COLORS --*/
-/*-- FOMTS --*/
 /*
 	Theme Name: Boilerplate
 	Theme URI: https://github.com/asuh/HTML5Boilerplate-Starkers-WordPress-Theme
@@ -899,12 +898,113 @@ ol > li:before {
   text-transform: uppercase;
 }
 
+.list--row > * {
+  display: inline-block;
+}
+
+/* Li counter with style trick @http://goo.gl/vW9Jxj */
+.list--counter {
+  counter-reset: li;
+  /* Initiate a counter */
+}
+
+.list--counter > li {
+  list-style: none;
+  /* Disable the normal item numbering */
+}
+
+.list--counter > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+}
+
 @media screen and (min-width: 1230px) {
   .limit-center {
     width: 1230px;
     margin: 0 auto;
   }
 }
+/* Using Modular Scale to deal font sizing and space in combination with Typi */
+/*
+	Sass plugin to claculate modular scales
+	Url reference: http://www.modularscale.com
+
+*/
+/* This is the MINOR THIRD scale */
+/* Using TYPI to deal with font-sizing and vertical rythm */
+/*
+	Setup for Typi component:
+	Reference url: @http://goo.gl/l6rKpH
+	Using Modular Scale with Typi
+	Reference url: @http://goo.gl/N92ce3
+
+	1st setup typi map
+	Typi automatically looks for a $breakpoints map 
+	to create your media queries (located in _varaibles.scss)
+*/
+/*
+	BREAKPOINTS
+*/
+/*
+	Setup a $typi:
+	Once the $typi map is set up, 
+	we call the typi-base() mixin within the html selector.
+	This creates the font-sizes stated in percentages
+	with the breakpoints setup in the $breakpoints map.
+*/
+html {
+  font-size: 100%;
+  line-height: 1.3;
+}
+@media all and (min-width: 800px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+@media all and (min-width: 1200px) {
+  html {
+    font-size: 125%;
+    line-height: 1.4;
+  }
+}
+
+/*
+	Modular scale + type
+	we need to create font-maps to hold your typography configurations
+	You can use Modular Scale directly with Typi 
+	by writing the ms() function as the first value of each key
+*/
+h1 {
+  font-size: 2.48832rem;
+  line-height: 1.2;
+}
+@media all and (min-width: 1200px) {
+  h1 {
+    font-size: 1.728rem;
+    line-height: 1.3;
+  }
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+@media all and (min-width: 1200px) {
+  h2 {
+    font-size: 1.44rem;
+  }
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+@media all and (min-width: 1200px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Input reset from boilerplate */
 /**
  * Re-set default cursor for disabled elements.
@@ -1087,31 +1187,7 @@ h1 {
   margin: 0;
 }
 h1:hover {
-  -webkit-animation: slideAround 3s infinite;
-          animation: slideAround 3s infinite;
-}
-
-@-webkit-keyframes slideAround {
-  0% {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  25% {
-    margin-left: 50px;
-    margin-right: 0;
-  }
-  50% {
-    margin-left: 50px;
-    margin-top: 50px;
-  }
-  75% {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-  100% {
-    margin-left: 0;
-    margin-top: 0;
-  }
+  animation: slideAround 3s infinite;
 }
 
 @keyframes slideAround {

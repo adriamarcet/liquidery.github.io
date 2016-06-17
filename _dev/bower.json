@@ -29,6 +29,10 @@
     "../dist/assets"
   ],
   "devDependencies": {
-    "jquery": "~3.0.0"
+    "jquery": "~3.0.0",
+    "modular-scale": "~2.1.3"
+  },
+  "dependencies": {
+    "typi": "~2.2.3"
   }
 }

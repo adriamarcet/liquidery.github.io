@@ -33,3 +33,18 @@ grunt concat task and call each file individually.
 Refernce information:
 https://css-tricks.com/whats-great-bower/
 http://blog.teamtreehouse.com/getting-started-bower
+
+## Frontend
+
+## Using grunt
+First, cd to the _dev folder and then use the following commands
+(they might require SUDO )
+
+npm install -g grunt-cli
+npm install grunt
+npm install
+
+### Typography
+Is setup with typi
+
+Reference: http://zellwk.com/blog/responsive-typography/
