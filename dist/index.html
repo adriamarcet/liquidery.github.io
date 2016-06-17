@@ -7,16 +7,20 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>Liquidery</h1>
-	<h2>What are you drinking now?</h2>
+	<header class="tag">
+
+		<h1>Liquidery</h1>
+		<h2>What are you drinking?</h2>
+	</header>
 
 	<section>
-		<h3>1st Take a pic of the label and enter the name</h3>
+			
+		<h3><div class="tag">1st</div> Take a pic of the label and enter the name</h3>
 		<label for="text">Name</label>
 		<input id="text" type="text"></input>
 	</section>
 	<section>
-		<h3>2nd Tell what kind of drink is it</h3>
+		<h3><div class="tag">2nd</div> Tell what kind of drink is it</h3>
 		<select name="type-of-liquid" id="">
 			<option value="water">water</option>
 			<option value="wine">wine</option>
@@ -35,7 +39,7 @@
 	</section>
 
 	<section>
-		<h3>3rd What do you think about it</h3>
+		<h3><div class="tag">3rd</div> What do you think about it</h3>
 		<select name="stars" id="">
 			<option value="1 Star">1 Star</option>
 			<option value="2 Stars">2 Stars</option>
@@ -46,6 +50,23 @@
 		</select>
 		<h3>Add your comments here, something that will be useful to know in the future about this -wine-</h3>
 		<textarea name="thinking" id="" cols="30" rows="10"></textarea>
+	</section>
+
+	<section>
+		<h2 class="tag">So far you have drinked</h2>
+		<label for="order">Order by</label>
+		<select name="order-by" id="order">
+			<option value="2 Stars">The I most like</option>
+			<option value="3 stars">Type o' drink</option>
+			<option value="4 stars">With comment</option>
+		</select>
+
+	</section>
+
+	<section>
+		<span>Liquidery will be usefull to note down what drinks you have tasted. Then, when you go buy to the supermakert and you´re not sure if you already tried that wine... POM! Liquery in your pocket to the rescue! Also if you want to try with a fancy dinner (again...) this time you will remember if that one works or not, just sayin'</span>
+		<br>
+		<span class="tag">A 2016 idea!</span>
 	</section>
 
 </body>
