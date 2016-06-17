@@ -1,0 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Vollkorn';
+@import 'https://fonts.googleapis.com/css?family=Arvo';
+$font-family--1: 'Vollkorn', serif;
+$font-family--2: 'Arvo', serif;
+
+* {
+	font-family: $font-family--2;
+}
+
+* + * {
+	margin-top: $baseline; 
+}
