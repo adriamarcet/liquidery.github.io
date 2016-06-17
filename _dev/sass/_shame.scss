@@ -1,0 +1,22 @@
+.tag {
+	background-color: #f51b44;
+	box-shadow: 0 0 0 4px #f51b44, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	
+	padding: $baseline;
+	margin: $baseline;
+
+	border: 2px dashed #fff;
+	color: white;
+	letter-spacing:2px;
+	text-align: center;
+
+	display: inline-block;
+}
+
+h1 {
+
+}
+
+section {
+	padding: 0 $baseline;
+}
