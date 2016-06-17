@@ -9,6 +9,9 @@
 @import "helpers.scss";
 
 
+/* Using PureCss to add some layout to the app */
+@import '../components/purecss-sass/vendor/assets/stylesheets/purecss.scss';
+
 /* Using Modular Scale to deal font sizing and space in combination with Typi */
 @import '../components/modular-scale/stylesheets/modular-scale.scss';
 @import "setup-modular-scale.scss";

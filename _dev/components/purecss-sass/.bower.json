@@ -1,0 +1,15 @@
+{
+  "name": "purecss-sass",
+  "homepage": "https://github.com/rubysamurai/purecss-sass",
+  "version": "0.6.0",
+  "_release": "0.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.0",
+    "commit": "c9ecb783a238109af8fd24d62ae6c769eaebc843"
+  },
+  "_source": "https://github.com/rubysamurai/purecss-sass.git",
+  "_target": "~0.6.0",
+  "_originalSource": "purecss-sass",
+  "_direct": true
+}
