@@ -1,27 +1,30 @@
 {
-  "name": "Example bower project",
-  "homepage": "https://github.com/adriamarcet/myquickgruntproject",
+  "name": "Bower setup for Loquidery",
+  "version": "0.0.0",
+  "homepage": "https://github.com/adriamarcet/liquidery",
   "authors": [
     "Adria Marcet <adriamarcetrovira@gmail.com>"
   ],
-  "description": "An example project using bower",
-  "main": "index.html",
-  "moduleType": [],
+  "description": "This setup is meant to be inside the _dev folder, also all command lines should be applied inside of that folder.",
+  "main": "../dist/index.html",
   "keywords": [
-    "testkewyword"
+    "liquidery",
+    "app",
+    "bottles",
+    "wine",
+    "catalog",
+    "water",
+    "memory",
+    "saving",
+    "easy",
+    "tags"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "_dev/bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "jquery": "^2.2.0",
-    "animate.css": "^3.5.1"
-  }
+  ]
 }

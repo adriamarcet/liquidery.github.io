@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # jQuery
 
 > jQuery is a fast, small, and feature-rich JavaScript library.
@@ -64,10 +63,3 @@ require("jsdom").env("", function(err, window) {
 	var $ = require("jquery")(window);
 });
 ```
-=======
-# jQuery Dist
-
-This repo only contains package distribution files for jQuery Core.
-
-For source files and issues, visit the [jQuery repo](https://github.com/jquery/jquery).
->>>>>>> 74ac078b58e4a4d3a88601450b2ba78bfdfc8b37
