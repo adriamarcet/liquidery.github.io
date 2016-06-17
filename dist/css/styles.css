@@ -1,21 +1,29 @@
 /*
-Error: File to import not found or unreadable: shame.scss.
-        on line 33 of sass/project.scss
+Error: Invalid CSS after "_shame.scss": expected "{", was ""
+        on line 1 of sass/_shame.scss
+        from line 33 of sass/project.scss
 
-28: @import "base.scss";
-29: 
-30: @import "zindex.scss";
-31: @import "end.scss";
-32: 
-33: @import "shame.scss";
+1: _shame.scss
 
 Backtrace:
+sass/_shame.scss:1
 sass/project.scss:33
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1162:in `expected'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1098:in `expected'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1093:in `tok!'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:638:in `block'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:632:in `ruleset'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:657:in `block_child'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:647:in `block_contents'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/engine.rb:403:in `_to_tree'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/engine.rb:309:in `to_tree'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
@@ -48,4 +56,4 @@ C:/Ruby22/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: shame.scss.\A         on line 33 of sass/project.scss\A \A 28: @import \"base.scss\";\A 29: \A 30: @import \"zindex.scss\";\A 31: @import \"end.scss\";\A 32: \A 33: @import \"shame.scss\";"; }
+  content: "Error: Invalid CSS after \"_shame.scss\": expected \"{\", was \"\"\A         on line 1 of sass/_shame.scss\A         from line 33 of sass/project.scss\A \A 1: _shame.scss"; }
