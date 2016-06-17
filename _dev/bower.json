@@ -25,7 +25,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "../dist/assets"
   ],
   "devDependencies": {
     "jquery": "~3.0.0"
