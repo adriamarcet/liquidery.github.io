@@ -1,11 +1,18 @@
 module.exports = function(grunt) {
 
 	grunt.config('concat', {
+
 		// Concatenate JS files and output scripts.js
 		dist: {
 			src: [
 				/* 'js/dev_scripts.js',  // This specific file */
-				'js/**/*.js', // All JS in the libs folder
+				
+				/* Calling jQuery here */
+				'components/jquery/jquery.min.js',
+				/* Import all script files in JS folder*/
+				'js/document.ready.js',
+				/* Import all script files in JS folder*/
+				// 'js/**/*.js',
 			],
 			dest: '../dist/js/scripts.js',
 		}

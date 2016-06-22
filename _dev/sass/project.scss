@@ -4,13 +4,12 @@
 @import "mixins.scss";
 @import "boilerplate-reset.scss";
 
-@import "fonts.scss";
-@import "globals.scss";
-@import "helpers.scss";
-
-
 /* Using PureCss to add some layout to the app */
 @import '../components/purecss-sass/vendor/assets/stylesheets/purecss.scss';
+
+
+/* Declaring font families */
+@import "fonts.scss";
 
 /* Using Modular Scale to deal font sizing and space in combination with Typi */
 @import '../components/modular-scale/stylesheets/modular-scale.scss';
@@ -20,12 +19,23 @@
 @import "../components/typi/scss/typi.scss";
 @import "setup-typi.scss";
 
+/* Adjusting render of typography, size, width, etc. */
+@import "typography.scss";
+
+
+@import "globals.scss";
+@import "helpers.scss";
+
+@import "base.scss";
+
+
 
 @import "components/inputs.scss";
 @import "components/icons.scss";
 @import "components/group.scss";
 
-@import "base.scss";
+@import "components/logo.scss";
+
 
 @import "zindex.scss";
 @import "end.scss";

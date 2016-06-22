@@ -1,3 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Vollkorn';
+@import 'https://fonts.googleapis.com/css?family=Arvo';
+@import url(https://fonts.googleapis.com/css?family=Lemon);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700);
+
+$font-family--1: 'Vollkorn', serif;
+$font-family--2: 'Arvo', serif;
+$font-family--3: 'Lemon', cursive;
+$font-family--4: 'Cabin Condensed', sans-serif;
+
+* {
+	font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+	color: rebeccapurple;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+/*
+* {
+	font-family: $font-family--2;
+}
+
+.logo {
+	font-family: $font-family--3;
+}
+
+.sidekick {
+	font-family: $font-family--3;
+}
+*/
 
 /* Font stack options FROM HTML5 BOILERPLATE
 

@@ -1,5 +1,5 @@
 {
-  "name": "Bower setup for Loquidery",
+  "name": "liquidery",
   "version": "0.0.0",
   "homepage": "https://github.com/adriamarcet/liquidery",
   "authors": [
@@ -29,10 +29,7 @@
     "../dist/assets"
   ],
   "devDependencies": {
-    "jquery": "~3.0.0",
+    "jquery": "~2.0.0",
     "modular-scale": "~2.1.3"
-  },
-  "dependencies": {
-    "typi": "~2.2.3"
   }
 }

@@ -1,4 +1,4 @@
-# liquidery
+# LIQUIDERY
 This will remember your favorite liquids :)
 
 ## Bower

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	grunt.config('uglify', {
 		// Minify code from the scripts output
 		build: {
-			src: '../js/scripts.js',
+			src: '../dist/js/scripts.js',
 			dest: '../dist/js/scripts.min.js'
 		}
 	});

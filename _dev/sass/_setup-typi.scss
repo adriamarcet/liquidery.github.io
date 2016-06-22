@@ -41,13 +41,13 @@ html {
 	by writing the ms() function as the first value of each key
 */
 $h1-map: (
-	null: (ms(5), 1.2),
-	large: (ms(3), 1.3)
+	null: (ms(3), 1.2),
+	large: (ms(4), 1.3)
 );
 
 $h2-map: (
-	null: ms(3),
-	large: ms(2)
+	null: (ms(2), 1.2),
+	large: (ms(3), 1.3)
 );
 
 $h3-map: (
@@ -55,6 +55,12 @@ $h3-map: (
 	large: ms(1)
 );
 
-h1 { @include typi($h1-map) }
-h2 { @include typi($h2-map) }
-h3 { @include typi($h3-map) }
+$p-map: (
+	null:  (ms(0), 1.4),
+	large: (ms(0), 1.6)
+);
+
+h1 	{ @include typi($h1-map) 	}
+h2 	{ @include typi($h2-map) 	}
+h3 	{ @include typi($h3-map) 	}
+p, li, span 	{ @include typi($p-map) 	}

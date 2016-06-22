@@ -22,6 +22,8 @@
  */
 @import "https://fonts.googleapis.com/css?family=Vollkorn";
 @import "https://fonts.googleapis.com/css?family=Arvo";
+@import url(https://fonts.googleapis.com/css?family=Lemon);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -729,194 +731,6 @@ li#theme-switcher {
 
   .home .sticky {
     border: none;
-  }
-}
-/* Font stack options FROM HTML5 BOILERPLATE
-
-	The following represents a list of font stacks, as recommended by Nathan Ford in
-	http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
-
-	I've added inverted commas around the relevant family names to ensure compatibility.
-	p = balanced for paragraphs or body copy
-	t = balanced for headlines or titles
-
-	- - - -
-
-Arial, "Helvetica Neue", Helvetica, sans-serif - p, t
-
-Baskerville, "Times New Roman", Times, serif - p
-Baskerville, "Times, Times New Roman", serif - t
-
-Cambria, Georgia, Times, "Times New Roman", serif - p, t
-"Century Gothic", "Apple Gothic", sans-serif - p, t
-
-Consolas, "Lucida Console", Monaco, monospace - p, t
-
-"Copperplate Light", "Copperplate Gothic Light", serif - p, t
-
-"Courier New", Courier, monospace - p, t
-
-"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif - p, t
-
-Futura, "Century Gothic", "Apple Gothic", sans-serif - p, t
-
-Garamond, "Hoefler Text", "Times New Roman", Times, serif - p
-Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif - t
-
-Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif - p
-Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - t
-
-Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif - p
-Georgia, Times, "Times New Roman", serif - t
-
-GillSans, Calibri, Trebuchet, sans-serif - p
-GillSans, Trebuchet, Calibri, sans-serif - t
-
-"Helvetica Neue", Arial, Helvetica, sans-serif - p
-Helvetica, "Helvetica Neue", Arial, sans-serif - t
-
-Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif - p, t
-
-"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - p, t
-
-Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif - p
-Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif - t
-
-Tahoma, Geneva, Verdana - p
-Tahoma, Verdana, Geneva - t
-
-Times, "Times New Roman", Georgia, serif - p, t
-
-Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif - p
-Trebuchet, Tahoma, Arial, sans-serif - t
-
-Verdana, Geneva, Tahoma, sans-serif - p
-Verdana, Tahoma, Geneva, sans-serif - t
-
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-iframe {
-  width: 100%    !important;
-}
-
-label {
-  display: block;
-}
-
-/* Li counter with style trick @http://goo.gl/vW9Jxj */
-ol {
-  counter-reset: li;
-  /* Initiate a counter */
-}
-ol > li {
-  list-style: none;
-  /* Disable the normal item numbering */
-}
-ol > li:before {
-  content: counter(li);
-  /* Use the counter as content */
-  counter-increment: li;
-  /* Increment the counter by 1 */
-}
-
-/* ==========================================================================
-   Helper classes - from HTML5 Boilerplate
-   ========================================================================== */
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-.invisible {
-  visibility: hidden;
-}
-
-.align-right {
-  text-align: right;
-}
-.align-right * {
-  text-align: right;
-}
-
-.align-center {
-  text-align: center;
-}
-.align-center * {
-  text-align: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-.uppercase * {
-  text-transform: uppercase;
-}
-
-.list--row > * {
-  display: inline-block;
-}
-
-/* Li counter with style trick @http://goo.gl/vW9Jxj */
-.list--counter {
-  counter-reset: li;
-  /* Initiate a counter */
-}
-
-.list--counter > li {
-  list-style: none;
-  /* Disable the normal item numbering */
-}
-
-.list--counter > li:before {
-  content: counter(li);
-  /* Use the counter as content */
-  counter-increment: li;
-  /* Increment the counter by 1 */
-}
-
-@media screen and (min-width: 1230px) {
-  .limit-center {
-    width: 1230px;
-    margin: 0 auto;
   }
 }
 /* Using PureCss to add some layout to the app */
@@ -3084,13 +2898,100 @@ striping:
   border-bottom-width: 0;
 }
 
+/* Declaring font families */
+* {
+  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  color: rebeccapurple;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+/*
+* {
+	font-family: $font-family--2;
+}
+
+.logo {
+	font-family: $font-family--3;
+}
+
+.sidekick {
+	font-family: $font-family--3;
+}
+*/
+/* Font stack options FROM HTML5 BOILERPLATE
+
+	The following represents a list of font stacks, as recommended by Nathan Ford in
+	http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
+
+	I've added inverted commas around the relevant family names to ensure compatibility.
+	p = balanced for paragraphs or body copy
+	t = balanced for headlines or titles
+
+	- - - -
+
+Arial, "Helvetica Neue", Helvetica, sans-serif - p, t
+
+Baskerville, "Times New Roman", Times, serif - p
+Baskerville, "Times, Times New Roman", serif - t
+
+Cambria, Georgia, Times, "Times New Roman", serif - p, t
+"Century Gothic", "Apple Gothic", sans-serif - p, t
+
+Consolas, "Lucida Console", Monaco, monospace - p, t
+
+"Copperplate Light", "Copperplate Gothic Light", serif - p, t
+
+"Courier New", Courier, monospace - p, t
+
+"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif - p, t
+
+Futura, "Century Gothic", "Apple Gothic", sans-serif - p, t
+
+Garamond, "Hoefler Text", "Times New Roman", Times, serif - p
+Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif - t
+
+Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif - p
+Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - t
+
+Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif - p
+Georgia, Times, "Times New Roman", serif - t
+
+GillSans, Calibri, Trebuchet, sans-serif - p
+GillSans, Trebuchet, Calibri, sans-serif - t
+
+"Helvetica Neue", Arial, Helvetica, sans-serif - p
+Helvetica, "Helvetica Neue", Arial, sans-serif - t
+
+Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif - p, t
+
+"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - p, t
+
+Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif - p
+Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif - t
+
+Tahoma, Geneva, Verdana - p
+Tahoma, Verdana, Geneva - t
+
+Times, "Times New Roman", Georgia, serif - p, t
+
+Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif - p
+Trebuchet, Tahoma, Arial, sans-serif - t
+
+Verdana, Geneva, Tahoma, sans-serif - p
+Verdana, Tahoma, Geneva, sans-serif - t
+
+*/
 /* Using Modular Scale to deal font sizing and space in combination with Typi */
 /*
 	Sass plugin to claculate modular scales
 	Url reference: http://www.modularscale.com
 
 */
-/* This is the MINOR THIRD scale */
+/* This is the PERFECT FOURTH scale */
 /* Using TYPI to deal with font-sizing and vertical rythm */
 /*
 	Setup for Typi component:
@@ -3135,32 +3036,183 @@ html {
 	by writing the ms() function as the first value of each key
 */
 h1 {
-  font-size: 2.48832rem;
+  font-size: 2.36859rem;
   line-height: 1.2;
 }
 @media all and (min-width: 1200px) {
   h1 {
-    font-size: 1.728rem;
+    font-size: 3.15733rem;
     line-height: 1.3;
   }
 }
 
 h2 {
-  font-size: 1.728rem;
+  font-size: 1.77689rem;
+  line-height: 1.2;
 }
 @media all and (min-width: 1200px) {
   h2 {
-    font-size: 1.44rem;
+    font-size: 2.36859rem;
+    line-height: 1.3;
   }
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.333rem;
 }
 @media all and (min-width: 1200px) {
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.333rem;
   }
+}
+
+p, li, span {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+@media all and (min-width: 1200px) {
+  p, li, span {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Adjusting render of typography, size, width, etc. */
+/*
+	Reseting all text tags
+*/
+h1, h2, h3, h4, h5, h6, p, span, div, header {
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+iframe {
+  width: 100%    !important;
+}
+
+label {
+  display: block;
+}
+
+/* Li counter with style trick @http://goo.gl/vW9Jxj */
+ol {
+  counter-reset: li;
+  /* Initiate a counter */
+}
+ol > li {
+  list-style: none;
+  /* Disable the normal item numbering */
+}
+ol > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  font-size: inherit;
+}
+
+/* ==========================================================================
+   Helper classes - from HTML5 Boilerplate
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+.align-right {
+  text-align: right;
+}
+.align-right * {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-center * {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.uppercase * {
+  text-transform: uppercase;
+}
+
+.list--row > * {
+  display: inline-block;
+}
+
+/* Li counter with style trick @http://goo.gl/vW9Jxj */
+.list--counter {
+  counter-reset: li;
+  /* Initiate a counter */
+}
+
+.list--counter > li {
+  list-style: none;
+  /* Disable the normal item numbering */
+}
+
+.list--counter > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+}
+
+@media screen and (min-width: 1230px) {
+  .limit-center {
+    width: 1230px;
+    margin: 0 auto;
+  }
+}
+* + * {
+  margin-top: 24px;
 }
 
 /* Input reset from boilerplate */
@@ -3338,42 +3390,27 @@ input[type="search"]::-webkit-search-decoration {
     margin-bottom: 0;
   }
 }
-* {
-  font-family: "Arvo", serif;
+.hero {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  display: block;
+  font-size: 17vw;
 }
 
-* + * {
-  margin-top: 20px;
+.sidekick {
+  text-align: center;
+  font-size: 5vw;
+  text-transform: uppercase;
 }
 
 #wpadminbar {
   display: none !important;
 }
 
-.tag {
-  background-color: #f51b44;
-  box-shadow: 0 0 0 4px #f51b44, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-  padding: 20px;
-  margin: 20px 0;
-  border: 2px dashed #fff;
-  color: white;
-  letter-spacing: 2px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 2px;
-  background-color: #f51b43;
-  background: #f51b43;
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #f51b43), color-stop(100%, red));
-  background: linear-gradient(135deg, #f51b43 0%, red 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f51b43', endColorstr='#ff0000', GradientType=1 );
-}
-
-header.tag {
-  margin: 20px;
-}
-
 section {
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

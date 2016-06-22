@@ -1,31 +1,5 @@
 .tag {
-	background-color: #f51b44;
-	box-shadow: 0 0 0 4px #f51b44, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-	
-	padding: $baseline;
-	margin: $baseline 0;
-
-	border: 2px dashed #fff;
-	color: white;
-	letter-spacing:2px;
-	text-align: center;
-
-	display: inline-block;
-	border-radius: 2px;
-
-	background-color: rgba(245,27,67,1);
-	background: rgba(245,27,67,1);
-	background: -moz-linear-gradient(-45deg, rgba(245,27,67,1) 0%, rgba(255,0,0,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(245,27,67,1)), color-stop(100%, rgba(255,0,0,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(245,27,67,1) 0%, rgba(255,0,0,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(245,27,67,1) 0%, rgba(255,0,0,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(245,27,67,1) 0%, rgba(255,0,0,1) 100%);
-	background: linear-gradient(135deg, rgba(245,27,67,1) 0%, rgba(255,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f51b43', endColorstr='#ff0000', GradientType=1 );
-}
-
-header.tag {
-	margin: $baseline;
+ 	
 }
 
 section {
