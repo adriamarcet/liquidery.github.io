@@ -9,6 +9,10 @@ module.exports = function(grunt) {
 				
 				/* Calling jQuery here */
 				'components/jquery/jquery.min.js',
+
+				/* Adding CHOSEN plugin here */
+				'components/chosen/chosen.jquery.js',
+
 				/* Import all script files in JS folder*/
 				'js/document.ready.js',
 				/* Import all script files in JS folder*/

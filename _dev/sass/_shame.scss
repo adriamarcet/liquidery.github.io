@@ -1,7 +1,17 @@
-.tag {
- 	
+.instructions-list {
+	
+	li {
+		&:before {
+			padding-left: $baseline;
+		}
+	}
+}
+
+.chosen-container div {
+	margin: 0;
 }
 
 section {
+
 	padding: 0 $baseline;
 }

@@ -8,6 +8,9 @@
 @import '../components/purecss-sass/vendor/assets/stylesheets/purecss.scss';
 
 
+/* Using CHOSEN plugin to have more user friendly select inputs*/
+@import '../components/chosen/chosen.scss';
+
 /* Declaring font families */
 @import "fonts.scss";
 

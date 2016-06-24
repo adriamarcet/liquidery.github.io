@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My project</title>
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 		<p><strong>Liquidery will be usefull to note down what drinks you have tasted.</strong> Then, when you go buy to the supermakert and you´re not sure if you already tried that wine... POM! Liquery in your pocket to the rescue! Also if you want to try with a fancy dinner (again...) this time you will remember if that one works or not, just sayin'</p> 
 	</section>
 
-	<ol>
+	<ol class="instructions-list">
 		<li>
 			<section>
 				<h1>Take a pic of the label and enter the name</h1>
@@ -28,27 +28,54 @@
 		<li>
 			<section>
 				<h1>Tell what kind of drink is it</h1>
-				<select name="type-of-liquid" id="">
-					<option value="water">water</option>
-					<option value="wine">wine</option>
-					<option value="beer">beer</option>
-					<option value="soda">soda</option>
-					<option value="liquor">liquor</option>
-					<option value="oil">oil</option>
-					<option value="vinager">vinager</option>
+				<select name="type-of-liquid" id="" class="js-chosen">
+					<optgroup label="Water">
+						<option>Sparkling water</option>
+						<option>Natural water</option>
+					</optgroup>
+					<optgroup label="Wine">
+						<option>White wine</option>
+						<option>Black wine</option>
+						<option>Red wine</option>
+					</optgroup>
+					<optgroup label="Beer">
+						<option>Blonde beer</option>
+						<option>Red beer</option>
+						<option>Black beer</option>
+					</optgroup>
+					<optgroup label="Oil">
+						<option>Olive oil</option>
+						<option>Palm oil</option>
+						<option>Peanut oil</option>
+						<option>Seasan oil</option>
+						<option>Sunflower oil</option>
+					</optgroup>
+					<optgroup label="Vinager">
+						<option>Wine vinager beer</option>
+						<option>Sider vinager</option>
+						<option>Rice vinager</option>
+						<option>Modena vinager</option>
+					</optgroup>
+					<optgroup label="Liquor">
+						<option>Cava</option>
+						<option>Xampagne</option>
+						<option>Sake</option>
+						<option>Whisky</option>
+						<option>VodkaSider</option>
+						<option>Gin</option>
+						<option>Tequila</option>
+						<option>Rhum</option>
+						<option>Caxasa</option>
+						<option>Absinth</option>
+						<option>Liquor of...</option>
+					</optgroup>
 				</select>
-
-				<h3>This -wine- is</h3>
-				<input type="radio" name="type" value="white"> White<br>
-				<input type="radio" name="type" value="black"> Black<br>
-				<input type="radio" name="type" value="red" checked> Red<br>
-				<input type="radio" name="type" value="green"> Green<br>
 			</section>
 		</li>
 		<li>
 			<section>
 				<h1>What do you think about it</h1>
-				<select name="stars" id="">
+				<select name="stars" id="" class="js-chosen">
 					<option value="1 Star">1 Star</option>
 					<option value="2 Stars">2 Stars</option>
 					<option value="3 stars">3 stars</option>
@@ -64,7 +91,7 @@
 			<section>
 				<h1>So far you have drinked</h1>
 				<label for="order">Order by</label>
-				<select name="order-by" id="order">
+				<select name="order-by" id="order" class="js-chosen">
 					<option value="2 Stars">The I most like</option>
 					<option value="3 stars">Type o' drink</option>
 					<option value="4 stars">With comment</option>
