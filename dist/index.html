@@ -74,17 +74,26 @@
 		</li>
 		<li>
 			<section>
-				<h1>What do you think about it</h1>
-				<select name="stars" id="" class="js-chosen">
-					<option value="1 Star">1 Star</option>
-					<option value="2 Stars">2 Stars</option>
-					<option value="3 stars">3 stars</option>
-					<option value="4 stars">4 stars</option>
-					<option value="5 stars">5 stars</option>
-					
-				</select>
-				<h3>Add your comments here, something that will be useful to know in the future about this -wine-</h3>
+				<h1>How many stars it deserves?</h1>
+				<fieldset class="starability-grow">
+				  <legend>First rating:</legend>
+				  <input type="radio" id="first-rate5" name="rating" value="5" />
+				  <label for="first-rate5" title="Amazing">5 stars</label>
+				  <input type="radio" id="first-rate4" name="rating" value="4" />
+				  <label for="first-rate4" title="Very good">4 stars</label>
+				  <input type="radio" id="first-rate3" name="rating" value="3" />
+				  <label for="first-rate3" title="Average">3 stars</label>
+				  <input type="radio" id="first-rate2" name="rating" value="2" />
+				  <label for="first-rate2" title="Not good">2 stars</label>
+				  <input type="radio" id="first-rate1" name="rating" value="1" />
+				  <label for="first-rate1" title="Terrible">1 star</label>
+				</fieldset>
+				
+				<h1>So... why?</h1>
+				<h2>Add your comments here, something that will be useful to know in the future about it</h2>
+
 				<textarea name="thinking" id="" cols="30" rows="10"></textarea>
+
 			</section>
 		</li>
 		<li>

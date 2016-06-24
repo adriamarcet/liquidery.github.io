@@ -3,27 +3,30 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "boilerplate-reset.scss";
-
-/* Using PureCss to add some layout to the app */
-@import '../components/purecss-sass/vendor/assets/stylesheets/purecss.scss';
-
-
-/* Using CHOSEN plugin to have more user friendly select inputs*/
-@import '../components/chosen/chosen.scss';
-
 /* Declaring font families */
 @import "fonts.scss";
 
-/* Using Modular Scale to deal font sizing and space in combination with Typi */
-@import '../components/modular-scale/stylesheets/modular-scale.scss';
-@import "setup-modular-scale.scss";
+/* Bower plugins here */
 
-/* Using TYPI to deal with font-sizing and vertical rythm */
-@import "../components/typi/scss/typi.scss";
-@import "setup-typi.scss";
+	/* Using PureCss to add some layout to the app */
+	@import '../components/purecss-sass/vendor/assets/stylesheets/purecss.scss';
 
-/* Adjusting render of typography, size, width, etc. */
-@import "typography.scss";
+	/* Using CHOSEN plugin to have more user friendly select inputs*/
+	@import '../components/chosen/chosen.scss';
+	
+	/* Using STARABILITY plugin to easy style radio choose as a star rating */
+	@import '../components/starability/starability-scss/starability/grow.scss';
+	
+	/* Using Modular Scale to deal font sizing and space in combination with Typi */
+	@import '../components/modular-scale/stylesheets/modular-scale.scss';
+	@import "setup-modular-scale.scss";
+
+	/* Using TYPI to deal with font-sizing and vertical rythm */
+	@import "../components/typi/scss/typi.scss";
+	@import "setup-typi.scss";
+
+	/* Adjusting render of typography, size, width, etc. */
+	@import "typography.scss";
 
 
 @import "globals.scss";
