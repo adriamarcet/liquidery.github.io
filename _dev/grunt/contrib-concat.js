@@ -13,6 +13,9 @@ module.exports = function(grunt) {
 				/* Adding CHOSEN plugin here */
 				'components/chosen/chosen.jquery.js',
 
+				/* Specific functions file */
+				'js/fn.upload-image.js',
+
 				/* Import all script files in JS folder*/
 				'js/document.ready.js',
 				/* Import all script files in JS folder*/
