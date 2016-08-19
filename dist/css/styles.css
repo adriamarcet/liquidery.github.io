@@ -24,6 +24,8 @@
 @import "https://fonts.googleapis.com/css?family=Arvo";
 @import url(https://fonts.googleapis.com/css?family=Lemon);
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700);
+@import "https://fonts.googleapis.com/css?family=Work+Sans";
+@import "https://fonts.googleapis.com/css?family=Lobster";
 html {
   font-family: sans-serif;
   /* 1 */
@@ -735,7 +737,7 @@ li#theme-switcher {
 }
 /* Declaring font families */
 * {
-  font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+  font-family: "Cabin Condensed", sans-serif;
 }
 
 a {
@@ -3644,6 +3646,10 @@ h1, h2, h3, h4, h5, h6, p, span, div, header {
   font-weight: normal;
 }
 
+h1 {
+  font-size: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3989,6 +3995,31 @@ section {
 
 img {
   max-width: 100%;
+}
+
+body {
+  background: white;
+  background: radial-gradient(ellipse at center, white 0%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 );
+}
+
+header {
+  padding: 40px 20px;
+}
+header .hero {
+  padding-bottom: 20px;
+  font-size: 66px;
+  color: #071031;
+  text-transform: none;
+  text-shadow: 1px 1px 1px #ffffff;
+  font-family: "Lobster", sans-serif;
+}
+header .sidekick {
+  color: #071031;
+  display: table;
+  border-bottom: 4px solid;
+  padding-bottom: 4px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

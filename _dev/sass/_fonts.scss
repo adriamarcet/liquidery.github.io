@@ -2,14 +2,18 @@
 @import 'https://fonts.googleapis.com/css?family=Arvo';
 @import url(https://fonts.googleapis.com/css?family=Lemon);
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,700);
+@import 'https://fonts.googleapis.com/css?family=Work+Sans';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
 
 $font-family--1: 'Vollkorn', serif;
 $font-family--2: 'Arvo', serif;
 $font-family--3: 'Lemon', cursive;
 $font-family--4: 'Cabin Condensed', sans-serif;
+$font-family--5: 'Lobster', sans-serif;
 
 * {
-	font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+	// font-family: Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;
+	font-family: $font-family--4;
 }
 
 a {
