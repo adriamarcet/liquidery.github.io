@@ -3987,4 +3987,8 @@ section {
   padding: 0 24px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
