@@ -1,0 +1,41 @@
+{
+  "name": "starability",
+  "version": "1.0.3-rc.1",
+  "homepage": "https://github.com/LunarLogic/starability",
+  "authors": [
+    "Anna Migas <amjmigas@gmail.com>"
+  ],
+  "description": "Starability.css is an accessible rating system with cute animations on top. No JavaScript included.",
+  "main": "./starability-css/starability-all.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "animations",
+    "accessibility",
+    "rating"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".gitignore",
+    ".npmignore",
+    "node_modules",
+    "bower_components",
+    "/demo",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "_release": "1.0.3-rc.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3-rc.1",
+    "commit": "c07c48a5bbe58fabc6f0d8098da1f5df4ea790b9"
+  },
+  "_source": "https://github.com/LunarLogic/starability.git",
+  "_target": "~1.0.3-rc.1",
+  "_originalSource": "starability",
+  "_direct": true
+}

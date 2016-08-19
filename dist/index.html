@@ -10,7 +10,7 @@
 	<header>
 		
 		<h1 class="hero">Liquidery</h1>
-		<h2 class="sidekick">What're you drinking about?</h2>
+		<h2 class="sidekick">What were you drinking about?</h2>
 	</header>
 	<section>
 			
@@ -21,8 +21,10 @@
 		<li>
 			<section>
 				<h1>Take a pic of the label and enter the name</h1>
+
 				<label for="text">Name</label>
 				<input id="text" type="text"></input>
+				<input type="file" id="myFile">
 			</section>
 		</li>
 		<li>
@@ -76,7 +78,7 @@
 			<section>
 				<h1>How many stars it deserves?</h1>
 				<fieldset class="starability-grow">
-				  <legend>First rating:</legend>
+				  <legend>Rate it:</legend>
 				  <input type="radio" id="first-rate5" name="rating" value="5" />
 				  <label for="first-rate5" title="Amazing">5 stars</label>
 				  <input type="radio" id="first-rate4" name="rating" value="4" />
@@ -96,19 +98,17 @@
 
 			</section>
 		</li>
-		<li>
-			<section>
-				<h1>So far you have drinked</h1>
-				<label for="order">Order by</label>
-				<select name="order-by" id="order" class="js-chosen">
-					<option value="2 Stars">The I most like</option>
-					<option value="3 stars">Type o' drink</option>
-					<option value="4 stars">With comment</option>
-				</select>
-			</section>
-		</li>
 	</ol>
 	
+	<section>
+		<h1>So far you have drinked</h1>
+		<label for="order">Order by</label>
+		<select name="order-by" id="order" class="js-chosen">
+			<option value="2 Stars">The I most like</option>
+			<option value="3 stars">Type o' drink</option>
+			<option value="4 stars">With comment</option>
+		</select>
+	</section>
 
 	<section>
 		<span>Liquidery will be usefull to note down what drinks you have tasted. Then, when you go buy to the supermakert and you´re not sure if you already tried that wine... POM! Liquery in your pocket to the rescue! Also if you want to try with a fancy dinner (again...) this time you will remember if that one works or not, just sayin'</span>
