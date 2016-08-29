@@ -1,0 +1,17 @@
+.c-btn {
+
+	&--cta {
+		padding: 20px;
+		color: white;
+		background-color: $dark;
+		font-family: $font-family--1;
+
+		border-radius: 60px;
+		box-shadow: 0px 3px 1px 0px white;
+		border-top: 2px solid black;
+		border-top: 2px solid black;
+
+		display: table;
+		margin: 0 auto;
+	}
+}

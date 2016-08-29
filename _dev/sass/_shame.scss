@@ -1,8 +1,27 @@
 .instructions-list {
 	
+	text-align: center;
+
 	li {
 		&:before {
 			padding-left: $baseline;
+
+			padding: 20px;
+			font-size: #{(40/16)}rem;
+			font-family: $font-family--1;
+			
+			display: inline-block;
+			
+			color: $dark;
+			border: 4px solid $dark;
+
+			padding: 20px 40px;
+			border-radius: 100%;
+			
+			box-shadow: 0px 3px 1px 0px white;
+			
+			margin-bottom:  $baseline*2;
+
 		}
 	}
 }
@@ -14,6 +33,7 @@
 section {
 
 	padding: 0 $baseline;
+	padding-bottom: $baseline*5;
 }
 
 img {
@@ -40,7 +60,7 @@ header {
 	.hero {
 		padding-bottom: 20px;
 		font-size: 66px;
-		color: #071031;
+		color: $dark;
 		text-transform: none;
 		text-shadow: 1px 1px 1px #ffffff;
 		font-family: $font-family--5;
@@ -54,4 +74,55 @@ header {
 		padding-bottom: 4px;
 		margin: 0 auto;
 	}
+}
+
+
+
+.undercover {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	top: 0;
+	
+	z-index: -1;
+
+	.hero {
+		opacity: .58;
+		color: #d0d0d0;
+	}
+}
+
+
+
+
+
+input[type="file"] {
+
+	display: block;
+	width: 100%;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  @extend .c-btn--cta;
+  content: 'Take picture';
+  
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.custom-file-input:focus {
+  outline: none;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  // background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  background-color: black;
 }
