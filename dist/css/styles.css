@@ -141,7 +141,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
+h1, .app-header--undercover .hero {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -944,7 +944,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-h1 {
+h1, .app-header--undercover .hero {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -3596,12 +3596,12 @@ html {
 	You can use Modular Scale directly with Typi 
 	by writing the ms() function as the first value of each key
 */
-h1 {
+h1, .app-header--undercover .hero {
   font-size: 2.36859rem;
   line-height: 1.2;
 }
 @media all and (min-width: 1200px) {
-  h1 {
+  h1, .app-header--undercover .hero {
     font-size: 3.15733rem;
     line-height: 1.3;
   }
@@ -3642,11 +3642,11 @@ p, li, span {
 /*
 	Reseting all text tags
 */
-h1, h2, h3, h4, h5, h6, p, span, div, header {
+h1, .app-header--undercover .hero, h2, h3, h4, h5, h6, p, span, div, header {
   font-weight: normal;
 }
 
-h1 {
+h1, .app-header--undercover .hero {
   font-size: 24px;
 }
 
@@ -4009,23 +4009,6 @@ textarea {
   display: none !important;
 }
 
-.instructions-list {
-  text-align: center;
-}
-.instructions-list li:before {
-  padding-left: 24px;
-  padding: 20px;
-  font-size: 2.5rem;
-  font-family: "Vollkorn", serif;
-  display: inline-block;
-  color: #071031;
-  border: 4px solid #071031;
-  padding: 20px 40px;
-  border-radius: 100%;
-  box-shadow: 0px 3px 1px 0px white;
-  margin-bottom: 48px;
-}
-
 .chosen-container div {
   margin: 0;
 }
@@ -4045,33 +4028,33 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 );
 }
 
-header {
-  padding: 40px 20px;
+.app-header {
+  padding: 48px 24px;
 }
-header .hero {
-  padding-bottom: 20px;
+.app-header .hero {
+  padding-bottom: 24px;
   font-size: 66px;
   color: #071031;
   text-transform: none;
   text-shadow: 1px 1px 1px #ffffff;
   font-family: "Lobster", sans-serif;
 }
-header .sidekick {
+.app-header .sidekick {
   color: #071031;
   display: table;
   border-bottom: 4px solid;
   padding-bottom: 4px;
   margin: 0 auto;
 }
-
-.undercover {
+.app-header--undercover {
   position: absolute;
   width: 100%;
   margin: 0;
   top: 0;
   z-index: -1;
 }
-.undercover .hero {
+.app-header--undercover .hero {
+  margin: 0;
   opacity: .58;
   color: #d0d0d0;
 }
@@ -4103,6 +4086,33 @@ input[type="file"] {
 
 .custom-file-input:active::before {
   background-color: black;
+}
+
+.step__header {
+  text-align: center;
+  padding: 48px 0;
+}
+.step__header .step__number {
+  margin-bottom: 48px;
+  display: block;
+}
+.step__number {
+  font-size: 2.5rem;
+  font-family: "Vollkorn", serif;
+  position: relative;
+}
+.step__number:before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: 4px solid #071031;
+  border-radius: 100%;
+  box-shadow: 0px 3px 1px 0px white;
+  position: absolute;
+  transform: translateX(-50%) translateY(-54%);
+  left: 50%;
+  top: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
